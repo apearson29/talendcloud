@@ -12,6 +12,7 @@
     <module>code/routines</module>
     <module>jobs/process/testcloud_0.1</module>
     <module>jobs/process/testfileread_0.1</module>
+    <module>jobs/process/create_bad_customers_0.1</module>
   </modules>
   <properties>
     <talend.project.name>CLOUDTEST</talend.project.name>
