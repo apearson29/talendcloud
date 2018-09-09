@@ -244,7 +244,7 @@
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_1">
-      <column comment="" key="false" length="-1" name="data" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="data" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getAsciiRandomString&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;length&quot;,&quot;PARAMETER_VALUE&quot;:&quot;6 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendString&quot;}"/>
       </column>
     </metadata>
@@ -263,7 +263,7 @@
     <elementParameter field="TEXT" name="USER" show="false" value="context.MySQL_Skittles_Login"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kueEAKxIn3pabxL16GWcTt6ozBh1ThILN64="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;clouddata1&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
@@ -297,12 +297,12 @@
     <elementParameter field="TEXT" name="LABEL" value="MySQL_Skittles"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_2">
-      <column comment="" key="false" length="-1" name="data" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="data" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getAsciiRandomString&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;length&quot;,&quot;PARAMETER_VALUE&quot;:&quot;6 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendString&quot;}"/>
       </column>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="false" length="-1" name="data" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="data" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getAsciiRandomString&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;length&quot;,&quot;PARAMETER_VALUE&quot;:&quot;6 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendString&quot;}"/>
       </column>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -370,13 +370,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ba1e7dee-1bec-45fd-b8e9-4b761de8e2e6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>z/PesZu1RE30DTEq8VnerVVgAwJJOkVgWg8nQOj038GRjomCLoxtqqWgOunzzo1dqvnDvX0MiP2d
-yESv9pPXng==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_dfd7c1a8-ace6-4e37-95e1-969b21b3d752"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>v3GNIDqRlwNEg50TU/bGeB7+T6Z5Dmf22ocCtHrioi17BR2pgp0YrBNs1YdLBOsuVFh2D+SNekO3
-+0r+wLUT+A==</DigestValue></Reference></SignedInfo><SignatureValue>lyW29f4rptqkSe+v7ZmiKdlJs6JZXLIazhpzZGRhqydr+MVNVq28gOws6iSGq52hLx1aKuAgedri
-E8dSe2wavhOzTMDqOwxP+vOAOTh+aDglmrMWawNsPDzs0WRNxiKZwV77/bsiKU2uD1wDOvcucXoA
-hxVvnxoaKBdull4aG8Y1MDCenYsRKkzQOsQzKSXsEvlxnMkJYFu8X9bAF7aVJRv+v6TQvZOKw42C
-+vbG5OY80CkkoEskPAETteJXWz4s1W43DoF0w7flGzAnfA4g+Bmo7lf/ZCVgHS43QZTJ8vk1KPA/
-p1U3e8VZwl8lD67XrYdLxYlIHOgFZHbXnRUNAg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d30eea68-09a4-4594-8cd9-ad3774b9e108"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ivn922GcXWfBcWqrNISig5v+ePWSZYvSES/LOBq4N3KBSDOeZa5mB/5wZJ1g7u0W9TzOaQLhdY0r
+f4ZPSwJbdg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_74cd0228-2acd-41ac-a83e-1bac408c3ba1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GuA+BztNJzs8cgcR7zzNIX3RQ8qbJs4EskSitRXbFOsObyyjK0UblJrWc+IlooqUvdQx/k42jL1j
+riOLpnCj0Q==</DigestValue></Reference></SignedInfo><SignatureValue>QE331QIeNMk1E2/qzxqUvTbgium735VyQH0eeeC6+osBUVH+LpDs8RWw1FYinuULNInP92OFuWj4
+OSXSquTa/q2ach3FOISFo6zC40ipD2WgzJvtfShGg25Oe8dvfbG7KiCOYyNzXnOstikZYy5XQ8sU
+Hgt1Hmx1oHAL3MSkvBlQd+76CtC2YmXruz08EIZKKvQ5j0DYYn3Q4MGtfcsb6d5F8nNfJ6KziXn9
+nwarQGF1mnGHROT68JoUvnvRnLPetOIdzuJMg+OogLLJF+d5LsJ+Zth/kWzA4UN9NPJiLkujEfYs
+sY4q/FDEkP/RK+fcrxY1C0XlFkkyEGAjKvbF9g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -400,4 +400,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_dfd7c1a8-ace6-4e37-95e1-969b21b3d752" Target="#_ba1e7dee-1bec-45fd-b8e9-4b761de8e2e6"><Timestamp>2018-09-09 01:50:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_74cd0228-2acd-41ac-a83e-1bac408c3ba1" Target="#_d30eea68-09a4-4594-8cd9-ad3774b9e108"><Timestamp>2018-09-09 01:51:14</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
